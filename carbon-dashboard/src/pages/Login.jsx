@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import bgImage from './bg.png';
 
 const Login = ({ setIsLoggedIn }) => {
@@ -100,9 +100,12 @@ const Login = ({ setIsLoggedIn }) => {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-400">
             Don't have an account?{' '}
-            <a href="#" className="font-semibold text-green-500 hover:text-green-400">
-              Sign up
-            </a>
+            <Link
+            to="/signup"
+            className="font-semibold text-green-500 hover:text-green-400"
+            >
+            Sign up
+          </Link>
           </p>
         </div>
       </div>

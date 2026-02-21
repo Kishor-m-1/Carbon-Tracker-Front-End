@@ -1,8 +1,7 @@
 import { Eye, EyeOff } from 'lucide-react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import bgImage from './bg.png';
-
 const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -38,8 +37,8 @@ const Login = ({ setIsLoggedIn }) => {
 >
       <div className="w-full max-w-md rounded-3xl bg-black p-8 shadow-lg border border-gray-800">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-white">Welcome Back</h1>
-          <p className="text-sm text-gray-400 mt-2">Please sign in to your account</p>
+          <h1 className="text-3xl font-bold text-white">Register</h1>
+          <p className="text-sm text-gray-400 mt-2">Please provide the details</p>
         </div>
 
         <form onSubmit={handleSubmit}>
@@ -56,7 +55,7 @@ const Login = ({ setIsLoggedIn }) => {
               onChange={(e) => setUsername(e.target.value)}
               required
             />
-            <label htmlFor="email" className="mb-2 block text-sm font-medium text-white">
+            <label htmlFor="email" className="mb-2 block text-sm py-2 font-medium text-white">
               Email Address
             </label>
             <input
@@ -108,9 +107,12 @@ const Login = ({ setIsLoggedIn }) => {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-400">
             Already have an account?{' '}
-            <a href="#" className="font-semibold text-green-500 hover:text-green-400">
-              Sign in
-            </a>
+          <Link
+            to="/login"
+            className="font-semibold text-green-500 hover:text-green-400"
+            >
+            login
+          </Link>
           </p>
         </div>
       </div>
