@@ -1,7 +1,6 @@
-import React from 'react';
-import StatCard from '../components/Dashboard/StatCard';
+import { Car, Clock, CloudLightning } from 'lucide-react';
 import EmissionsChart from '../components/Dashboard/EmissionsChart';
-import { CloudLightning, Clock, Car } from 'lucide-react';
+import StatCard from '../components/Dashboard/StatCard';
 
 const Home = () => {
   const username = localStorage.getItem('carbonUser') || 'User';

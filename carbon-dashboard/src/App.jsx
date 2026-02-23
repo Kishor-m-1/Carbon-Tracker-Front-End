@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
 import EcoLab from './pages/EcoLab';
+import Home from './pages/Home';
 import Login from './pages/Login';
+import SignUp from './pages/signUp';
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('carbonUser'));
@@ -19,8 +21,10 @@ const App = () => {
         <div className={isLoggedIn ? "container mx-auto p-6" : "flex-1 flex flex-col w-full"}>
           <Routes>
             <Route path="/login" element={isLoggedIn ? <Navigate to="/" /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
             <Route path="/eco-lab" element={<ProtectedRoute><EcoLab /></ProtectedRoute>} />
+            
           </Routes>
         </div>
       </div>
