@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <div className="flex flex-col min-h-screen bg-gray-950 text-white font-sans">
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <div className={isLoggedIn ? "container mx-auto p-6" : "flex-1 flex flex-col w-full"}>
           <Routes>
