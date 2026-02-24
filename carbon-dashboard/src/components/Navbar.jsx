@@ -12,8 +12,10 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   };
 
   return (
-    <nav className={isLoggedIn ? "bg-gray-900 text-white p-4 shadow-lg" : "bg-transparent text-white p-4 absolute w-full z-10"}>
-      <div className="container mx-auto flex justify-between items-center">
+      <nav className={isLoggedIn 
+        ? "sticky top-0 z-50 w-full bg-gray-900 text-white p-4 shadow-lg" 
+        : "absolute top-0 left-0 z-50 w-full bg-transparent text-white p-4"}> 
+     <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 text-xl font-bold text-green-400">
           <Leaf size={24} />
           <span>CarbonTracker</span>
@@ -21,6 +23,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
 
         {isLoggedIn && (
           <div className="flex items-center gap-6">
+            <Link to="/about" className="hover:text-green-400 transition-colors">About</Link>
             <Link to="/" className="hover:text-green-400 transition">Dashboard</Link>
             <Link to="/eco-lab" className="hover:text-green-400 transition">Eco-Simulator</Link>
             <button onClick={handleLogout} className="flex items-center gap-1 text-gray-400 hover:text-red-400 transition border-l border-gray-700 pl-4 ml-2">

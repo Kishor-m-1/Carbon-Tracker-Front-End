@@ -5,7 +5,8 @@ import EcoLab from './pages/EcoLab';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/signUp';
-
+import Report from './pages/Report';
+import About from './pages/About';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('carbonUser'));
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <div className="flex flex-col min-h-screen bg-gray-900 text-white font-sans">
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <div className={isLoggedIn ? "container mx-auto p-6" : "flex-1 flex flex-col w-full"}>
           <Routes>
@@ -24,7 +25,8 @@ const App = () => {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
             <Route path="/eco-lab" element={<ProtectedRoute><EcoLab /></ProtectedRoute>} />
-            
+            <Route path="/report" element={<ProtectedRoute><Report /></ProtectedRoute>} />
+            <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
           </Routes>
         </div>
       </div>

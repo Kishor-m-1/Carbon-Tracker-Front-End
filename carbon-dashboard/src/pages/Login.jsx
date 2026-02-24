@@ -1,7 +1,7 @@
 import { Eye, EyeOff } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import bgImage from './bg.png';
+import bgImage from './bg3.png';
 
 const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
@@ -35,7 +35,7 @@ const Login = ({ setIsLoggedIn }) => {
     <div className="flex-1 w-full flex bg-cover bg-center items-center justify-center px-4"
   style={{ backgroundImage: `url(${bgImage})` }}
 >
-      <div className="w-full max-w-md rounded-3xl bg-black p-8 shadow-lg border border-gray-800">
+      <div className="w-full max-w-md rounded-3xl bg-black p-8 shadow-lg">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold text-white">Welcome Back</h1>
           <p className="text-sm text-gray-400 mt-2">Please sign in to your account</p>
