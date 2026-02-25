@@ -12,6 +12,10 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   };
 
   return (
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f9d6ff (almost but not complete)
     <nav className={isLoggedIn ? "bg-gray-950 text-white p-4 shadow-lg" : "bg-transparent text-white p-4 absolute w-full z-10"}>
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 ">
@@ -22,7 +26,11 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
           <div className="flex items-center gap-6">
             <Link to="/" className="hover:text-green-400 transition">Home</Link>
             <Link to="/eco-lab" className="hover:text-green-400 transition">Eco-Simulator</Link>
+<<<<<<< HEAD
             <Link to="/" className="hover:text-green-400 transition">About Us</Link>
+=======
+            <Link to="/about" className="hover:text-green-400 transition-colors">About</Link>
+>>>>>>> 1f9d6ff (almost but not complete)
             <button onClick={handleLogout} className="flex items-center gap-1 text-gray-400 hover:text-red-400 transition border-l border-gray-700 pl-4 ml-2">
               <LogOut size={18} /> Logout
             </button>
