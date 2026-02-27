@@ -18,7 +18,6 @@ const SignUp = () => {
     setTimeout(() => {
       setIsLoading(false);
       
-      // 1. Extract the name from the email (vibin@example.com -> vibin)
       const Name = username;
       
       // 2. Save it to storage so the app remembers them

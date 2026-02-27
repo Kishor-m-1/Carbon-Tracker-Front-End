@@ -2,6 +2,7 @@ import { ArrowBigRight, Car, Clock, CloudLightning } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import EmissionsChart from '../components/Dashboard/EmissionsChart';
 import StatCard from '../components/Dashboard/StatCard';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const username = localStorage.getItem('carbonUser') || 'User';
