@@ -143,7 +143,7 @@ const Report = () => {
                 </span>
                 
                 <div 
-                  className="w-full max-w-[40px] bg-green-300 hover:bg-blue-500 transition-colors rounded-t-md cursor-pointer"
+                  className="w-full max-w-[40px] bg-green-400 hover:bg-blue-500 transition-colors rounded-t-md cursor-pointer"
                   style={{ height: `${(day.value / maxTrendValue) * 200}px` }}
                 ></div>
                 

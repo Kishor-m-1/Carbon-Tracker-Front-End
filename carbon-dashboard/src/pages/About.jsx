@@ -29,28 +29,28 @@ const About=()=>{
             </section>
 
             {/* Features/Empowerment Section */}
-            <section className="bg-green-500 border  text-black border-green-500/20 rounded-2xl p-8 md:p-12 mb-20">
+            <section className="bg-gradient-to-br from-green-500 to-emerald-70 border border-none  text-white rounded-2xl p-8 md:p-12 mb-20">
                 <h2 className="text-center text-3xl font-bold mb-10">Empowering Sustainable Browsing</h2>
                 <ul className="space-y-8 max-w-4xl mx-auto">
                     <li className="flex gap-4">
                         <span className="text-2xl"></span>
                         <div>
                             <h4 className="text-xl font-bold mb-1">Real-Time Tracking</h4>
-                            <p className="text-lg text-black font-semibold">Our background extension silently calculates the estimated emissions of your daily web browsing and screen time without invading your privacy.</p>
+                            <p className="text-lg text-white font-semibold">Our background extension silently calculates the estimated emissions of your daily web browsing and screen time without invading your privacy.</p>
                         </div>
                     </li>
                     <li className="flex gap-4">
                         <span className="text-2xl"></span>
                         <div>
                             <h4 className="text-xl font-bold mb-1">AI & Heavy-Compute Monitoring</h4>
-                            <p className="text-lg text-black font-semibold">Not all tasks are created equal. We provide specialized metrics to show the true cost of compute-heavy tasks like AI image generation and LLM queries.</p>
+                            <p className="text-lg text-white font-semibold">Not all tasks are created equal. We provide specialized metrics to show the true cost of compute-heavy tasks like AI image generation and LLM queries.</p>
                         </div>
                     </li>
                     <li className="flex gap-4">
                         <span className="text-2xl"></span>
                         <div>
                             <h4 className="text-xl font-bold mb-1">The Eco-Simulator</h4>
-                            <p className="text-lg text-black font-semibold">A safe sandbox to experiment with your habits. Discover exactly how much CO₂ you could save by tweaking streaming resolution or switching to dark mode.</p>
+                            <p className="text-lg text-white font-semibold">A safe sandbox to experiment with your habits. Discover exactly how much CO₂ you could save by tweaking streaming resolution or switching to dark mode.</p>
                         </div>
                     </li>
                 </ul>
@@ -89,7 +89,7 @@ const About=()=>{
                                 <img 
                                     src={src} 
                                     alt={`Logo ${index}`} 
-                                   className="relative z-10 h-80 w-auto object-contain  opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer"
+                                   className="relative z-10 h-80 w-auto object-contain  opacity-80 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer"
                                 />
                             </div>
                         ))}

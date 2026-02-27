@@ -20,7 +20,7 @@ const Home = () => {
       <p className="text-gray-100 mt-2 mb-4">Here is your digital carbon footprint summary.</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <StatCard icon={<CloudLightning size={28} className="text-red-500" />} title="Total CO₂" value="403 g" desc="This week" colorClass="text-red-500 bg-red-500" />
-        <StatCard icon={<Clock size={28} className="text-blue-500" />} title="Active Browsing" value="12h 45m" desc="This week" colorClass="text-blue-500 bg-blue-500" />
+        <StatCard icon={<Clock size={28} className="text-blue-900" />} title="Active Browsing" value="12h 45m" desc="This week" colorClass="text-blue-500 bg-blue-900" />
         <StatCard icon={<Car size={28} className="text-green-500" />} title="Car Equivalent" value="3.2 km" desc="Distance driven" colorClass="text-green-500 bg-green-500 " />
       </div>
 
